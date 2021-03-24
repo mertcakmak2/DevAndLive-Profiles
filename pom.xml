@@ -34,6 +34,23 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <build.profile.id>dev</build.profile.id>
+                <profileActive>dev</profileActive>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <build.profile.id>prod</build.profile.id>
+                <profileActive>prod</profileActive>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
